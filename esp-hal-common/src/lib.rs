@@ -106,6 +106,8 @@ pub mod i2c;
 pub mod i2s;
 #[cfg(any(dport, interrupt_core0, interrupt_core1))]
 pub mod interrupt;
+#[cfg(lcd_cam)]
+pub mod lcd_cam;
 #[cfg(ledc)]
 pub mod ledc;
 #[cfg(any(mcpwm0, mcpwm1))]
