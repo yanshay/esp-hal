@@ -7,6 +7,33 @@ Please note that only changes to the `esp-hal-common` package are tracked in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+[Unreleased]
+
+### Added
+
+- ESP32-C6: Properly initialize PMU (#974)
+- Implement overriding base mac address (#1044)
+- Add `rt-riscv` and `rt-xtensa` features to enable/disable runtime support (#1057)
+- ESP32-C6: Implement deep sleep (#918)
+- Add `embedded-io` feature to each chip-specific HAL (#1072)
+- ESP32-S3: Added support for 80Mhz PSRAM (#1069)
+- ESP32-S3: Added LCD_CAM I8080 driver (#1086)
+
+### Changed
+
+- Update to `1.0.0` releases of the `embedded-hal-*` packages (#1068)
+
+### Fixed
+
+- ESP32: correct gpio 32/33 in errata36() (#1053)
+- ESP32: make gpio 4 usable as analog pin (#1078)
+
+### Removed
+
+### Breaking
+
+- Unify the low-power peripheral names (`RTC_CNTL` and `LP_CLKRST` to `LPWR`) (#1064)
+
 ## [0.14.1] - 2023-12-13
 
 ### Fixed
